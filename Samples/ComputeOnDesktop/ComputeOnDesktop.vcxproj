@@ -132,7 +132,8 @@
       <TreatWarningAsError>true</TreatWarningAsError>
     </ClCompile>
     <Link>
-      <AdditionalOptions>/WHOLEARCHIVE:* %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalOptions>
+      </AdditionalOptions>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">
@@ -176,7 +177,8 @@
       <TreatWarningAsError>true</TreatWarningAsError>
     </ClCompile>
     <Link>
-      <AdditionalOptions>/WHOLEARCHIVE:* %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalOptions>
+      </AdditionalOptions>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">

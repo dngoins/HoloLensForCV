@@ -7,7 +7,7 @@
     <MinimumVisualStudioVersion>14.0</MinimumVisualStudioVersion>
     <AppContainerApplication>true</AppContainerApplication>
     <ApplicationType>Windows Store</ApplicationType>
-    <WindowsTargetPlatformVersion Condition=" '$(WindowsTargetPlatformVersion)' == '' ">10.0.14393.0</WindowsTargetPlatformVersion>
+    <WindowsTargetPlatformVersion Condition=" '$(WindowsTargetPlatformVersion)' == '' ">10.0.16299.0</WindowsTargetPlatformVersion>
     <WindowsTargetPlatformMinVersion>10.0.14393.0</WindowsTargetPlatformMinVersion>
     <ApplicationTypeRevision>10.0</ApplicationTypeRevision>
   </PropertyGroup>
@@ -110,6 +110,7 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup>
     <PackageCertificateKeyFile>BatchProcessing_TemporaryKey.pfx</PackageCertificateKeyFile>
+    <PackageCertificateThumbprint>EE6CC23F6CA60793513F71A24C2E663F4C8E2A4C</PackageCertificateThumbprint>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">
     <ClCompile>
@@ -119,7 +120,8 @@
       <TreatWarningAsError>true</TreatWarningAsError>
     </ClCompile>
     <Link>
-      <AdditionalOptions>/WHOLEARCHIVE:* %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalOptions>
+      </AdditionalOptions>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">
@@ -163,7 +165,8 @@
       <TreatWarningAsError>true</TreatWarningAsError>
     </ClCompile>
     <Link>
-      <AdditionalOptions>/WHOLEARCHIVE:* %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalOptions>
+      </AdditionalOptions>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
